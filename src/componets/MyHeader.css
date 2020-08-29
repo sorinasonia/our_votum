@@ -1,26 +1,29 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: white;
+    /* background-color: green; */
+    
 }
 
 .Header_root {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-evenly;
-    /* background-color: whites; */
+    background-color: whitesmoke;
     align-items: center;
     height: 8.5vh;
     
 }
 
-.Logo {
+.Header_root .Logo {
     color: rgba(128, 29, 185, 0.849);
     font-variant: small-caps;
     font-family:'Segoe UI';
+    background-color: whitesmoke;
 }
 
-.Search {
+
+.Header_root .Search {
     background-color: rgba(128, 128, 128, 0.041);
     border: 0.1px solid gray;
     margin-left: 50px;

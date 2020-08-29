@@ -32,6 +32,13 @@ constructor(props){
     </div>
   }
 
+  icons() {
+    return  <div className = "icons" > 
+    <p className = "icon_user" > <FaUser/> <TiArrowSortedDown/> </p>
+    <p className = "icon_arrow" > <TiArrowSortedDown/> </p>
+    </div>
+  }
+
   render() {
     return(
       <div className = "MyHeader" >
@@ -41,15 +48,13 @@ constructor(props){
           // This is the sticky part of the header.
           header={
             <div className="Header_root">
-              {/* <h1 className="Header_title">ReactStickyHeader</h1> */}
               <this.logo/>
               <this.search/>
               <button className = "login" > LOGIN </button>
               <button className = "signup" > SIGN UP </button>
-             
               <p className = "icons" > <FaUser/> <TiArrowSortedDown/> </p>
-            </div>
             
+            </div>
           }
         > 
         
