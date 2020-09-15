@@ -4,7 +4,8 @@ import './App.css';
 import MyHeader  from "./componets/MyHeader";
 import 'react-sticky-header/styles.css';
 import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
-// import ReactStickyHeader from 'react-sticky-header';
+// import Signup from "./componets/Signup";
+
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
 
       <React.Fragment>
         <MyHeader/>
+        {/* <Signup/> */}
         <Router>
           <Switch>
             <Route exact path = "/" component = {Home} />

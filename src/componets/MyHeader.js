@@ -4,8 +4,9 @@ import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
 import { FiSearch } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
-// import { MdArrowDropDown } from "react-icons/md";
 import { TiArrowSortedDown } from "react-icons/ti";
+import Signup from "./Signup";
+import Signin from "./Signin";
 
 
 
@@ -32,6 +33,13 @@ constructor(props){
     </div>
   }
 
+  icons() {
+    return  <div className = "icons" > 
+    <p className = "icon_user" > <FaUser/> <TiArrowSortedDown/> </p>
+    <p className = "icon_arrow" > <TiArrowSortedDown/> </p>
+    </div>
+  }
+
   render() {
     return(
       <div className = "MyHeader" >
@@ -41,15 +49,13 @@ constructor(props){
           // This is the sticky part of the header.
           header={
             <div className="Header_root">
-              {/* <h1 className="Header_title">ReactStickyHeader</h1> */}
               <this.logo/>
               <this.search/>
-              <button className = "login" > LOGIN </button>
-              <button className = "signup" > SIGN UP </button>
-             
+              <Signin/>
+              <Signup/>
               <p className = "icons" > <FaUser/> <TiArrowSortedDown/> </p>
-            </div>
             
+            </div>
           }
         > 
         
