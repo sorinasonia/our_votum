@@ -1,26 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: white;
+    
 }
 
 .Header_root {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-evenly;
-    /* background-color: whites; */
+    background-color: whitesmoke;
     align-items: center;
     height: 8.5vh;
     
 }
 
-.Logo {
+.Header_root .Logo {
     color: rgba(128, 29, 185, 0.849);
     font-variant: small-caps;
     font-family:'Segoe UI';
+    background-color: whitesmoke;
 }
 
-.Search {
+
+.Header_root .Search {
     background-color: rgba(128, 128, 128, 0.041);
     border: 0.1px solid gray;
     margin-left: 50px;
@@ -47,30 +49,7 @@
     
 }
 
-.login {
-    border-radius: 5px;
-    height: 5.8vh;
-    width: 7vw;
-    color: black;
-    font-size: 13.5px;
-    font-weight: bold;
-    margin-left: 70px;
-    border: 0.5px solid  rgba(128, 29, 185, 0.849) ;
-    background-color: transparent;
-}
-
-.signup {
-    border-radius: 5px;
-    height: 5.8vh;
-    color: black;
-    width: 7vw;
-    font-size: 13.5px;
-    font-weight: bold;
-    border: 0.5px solid black;
-    background-color: rgba(128, 29, 185, 0.699);    
-}
-
-.signup:hover { 
+.register:hover { 
     background-color: rgba(194, 129, 231, 0.445);    
 }
 
